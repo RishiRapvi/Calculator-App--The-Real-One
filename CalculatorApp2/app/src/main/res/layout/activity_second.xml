@@ -27,7 +27,6 @@
         android:hint="First num"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/num2ET"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -38,10 +37,9 @@
         android:layout_marginStart="100dp"
         android:layout_marginBottom="140dp"
         android:ems="10"
-        android:hint="Second"
+        android:hint="Second num"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/resultTV"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -50,8 +48,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
-        android:layout_marginBottom="203dp"
+        android:layout_marginBottom="216dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/findSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="44dp"
+        android:onClick="findSum"
+        android:text="Solve!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2ET" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="123dp"
+        android:text="Return Home"
+        android:onClick="switchScreens"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTV" />
 </androidx.constraintlayout.widget.ConstraintLayout>

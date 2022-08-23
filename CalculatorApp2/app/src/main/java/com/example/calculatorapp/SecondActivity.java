@@ -33,5 +33,23 @@ public class SecondActivity extends AppCompatActivity {
 
         numberSumTV.setText("The result of your calculation is: " + sum);
     }
+    public void findDifference(View view) {
+        EditText number1ET = findViewById(R.id.num1ET);
+        EditText number2ET = findViewById(R.id.num2ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+
+        int num1 = Integer.parseInt((number1ET.getText().toString()));
+        int num2 = Integer.parseInt((number2ET.getText().toString()));
+        int sum = num1 - num2;
+
+        numberSumTV.setText("The result of your calculation is: " + sum);
+    }
+    public void switchScreens(View view) {
+        EditText editText = findViewById(R.id.enteredName);
+        String name = editText.getText().toString();
+        Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("NAME", name);
+        startActivity(intent);
+    }
 
 }
