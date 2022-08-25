@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Calculator App</string>
+    <string name="app_name">Rishi\'s Calculator App</string>
+    <string name="addition">Addition Panel</string>
+    <string name="subtraction">Subtraction Panel</string>
+    <string name="multiplication">Multiplication Panel</string>
+    <string name="divison">Division Panel</string>
 </resources>
