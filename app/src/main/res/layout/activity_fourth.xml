@@ -23,17 +23,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="36dp"
         android:ems="10"
         android:hint=" First number"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/num2ET"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
 
     <EditText
         android:id="@+id/num2ET"
@@ -41,56 +42,53 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="66dp"
         android:ems="10"
         android:hint=" Second number"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/resultTV"
+        app:layout_constraintBottom_toTopOf="@+id/findProduct"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
 
     <TextView
         android:id="@+id/resultTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="212dp"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="328dp"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/findProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="37dp"
         android:onClick="findProduct"
         android:text="Solve!"
         app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num2ET"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="135dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="272dp"
         android:onClick="switchScreens"
         android:text="Return Home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
